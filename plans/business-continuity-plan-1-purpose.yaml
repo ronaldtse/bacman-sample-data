@@ -9,7 +9,7 @@ drillPlan:
       - description: First step
         timeAllowed: PT3M
     revisionID: 1
-    timeCreated: 2020-03-19
+    timeCreated: 2020-03-19T00:00:00.000Z
   - resourceRequirements:
       - description: A requirement
     preparationSteps:
@@ -18,4 +18,4 @@ drillPlan:
       - description: First step
         timeAllowed: PT3M
     revisionID: 2
-    timeCreated: 2020-03-19
+    timeCreated: 2020-03-19T00:00:00.000Z
