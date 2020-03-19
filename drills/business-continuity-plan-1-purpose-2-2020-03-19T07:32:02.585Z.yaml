@@ -8,8 +8,13 @@ report:
     - plan:
         description: First step
         timeAllowed: PT3M
-      responsible: []
+      responsible:
+        - id: tester-smith
+          name: Tester Smith
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Outcome!
+      activityType: Tabletop
+      startTime: 2020-03-19T07:32:04.857Z
+      endTime: 2020-03-19T07:32:17.636Z
   authors: []
+endTime: 2020-03-19T07:32:18.886Z
