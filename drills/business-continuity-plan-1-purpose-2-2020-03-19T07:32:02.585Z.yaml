@@ -1,0 +1,15 @@
+id: 'business-continuity-plan-1-purpose-2-2020-03-19T07:32:02.585Z'
+bcPlanID: business-continuity-plan-1-purpose
+bcDrillPlanRevisionID: 2
+startTime: 2020-03-19T07:32:02.585Z
+report:
+  followUpAction: ''
+  steps:
+    - plan:
+        description: First step
+        timeAllowed: PT3M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+  authors: []
