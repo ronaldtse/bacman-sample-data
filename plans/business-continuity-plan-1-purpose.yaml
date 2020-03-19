@@ -10,3 +10,12 @@ drillPlan:
         timeAllowed: PT3M
     revisionID: 1
     timeCreated: 2020-03-19
+  - resourceRequirements:
+      - description: A requirement
+    preparationSteps:
+      - description: 'A preparatory step, added in revision 2'
+    steps:
+      - description: First step
+        timeAllowed: PT3M
+    revisionID: 2
+    timeCreated: 2020-03-19
