@@ -3,15 +3,19 @@ bcPlanID: loss-of-equipment-ups-battery
 bcDrillPlanRevisionID: 1
 startTime: 2020-03-20T01:46:41.502Z
 report:
-  followUpAction: ''
+  followUpAction: Successful
   steps:
     - plan:
         description: Login to AWS Route53 management console
         timeAllowed: PT5M
       responsible: []
-      participants: []
-      result: ''
-      activityType: Discussion
+      participants:
+        - id: kw-kwan
+          name: KW Kwan
+        - id: jeffrey-lau
+          name: Jeffrey Lau
+      result: Login to AWS console successful
+      activityType: Live
     - plan:
         description: >-
           Update Route53 DNS record pointing from ELB to the IP address of a
@@ -19,8 +23,8 @@ report:
         timeAllowed: PT10M
       responsible: []
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Update successful
+      activityType: Live
     - plan:
         description: >-
           Test if the new configuration is functioning by starting a web browser
@@ -29,15 +33,15 @@ report:
         timeAllowed: PT10M
       responsible: []
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Connection successful
+      activityType: Live
     - plan:
         description: Contact Amazon about DDoS by creating a support call
         timeAllowed: PT20M
       responsible: []
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Able to establish call
+      activityType: Live
     - plan:
         description: >-
           Continue with Business Continuity Plan for AWS ELB service
@@ -45,13 +49,13 @@ report:
         timeAllowed: PT10M
       responsible: []
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Successful
+      activityType: Live
     - plan:
         description: Inform users
         timeAllowed: PT10M
       responsible: []
       participants: []
-      result: ''
-      activityType: Discussion
+      result: Able to access to Ribose status page
+      activityType: Live
   authors: []
