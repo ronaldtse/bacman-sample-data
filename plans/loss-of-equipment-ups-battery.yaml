@@ -1,5 +1,5 @@
 id: loss-of-equipment-ups-battery
-purpose: 'Loss of equipment: UPS battery'
+purpose: DDoS recovery plan
 activityID: security-ups-battery
 drillPlan:
   - resourceRequirements: []
