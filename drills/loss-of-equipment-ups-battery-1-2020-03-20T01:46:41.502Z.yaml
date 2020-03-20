@@ -1,0 +1,57 @@
+id: 'loss-of-equipment-ups-battery-1-2020-03-20T01:46:41.502Z'
+bcPlanID: loss-of-equipment-ups-battery
+bcDrillPlanRevisionID: 1
+startTime: 2020-03-20T01:46:41.502Z
+report:
+  followUpAction: ''
+  steps:
+    - plan:
+        description: Login to AWS Route53 management console
+        timeAllowed: PT5M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+    - plan:
+        description: >-
+          Update Route53 DNS record pointing from ELB to the IP address of a
+          production server
+        timeAllowed: PT10M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+    - plan:
+        description: >-
+          Test if the new configuration is functioning by starting a web browser
+          on a device that is connected to internet and connecting to:
+          http://www.ribose.com
+        timeAllowed: PT10M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+    - plan:
+        description: Contact Amazon about DDoS by creating a support call
+        timeAllowed: PT20M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+    - plan:
+        description: >-
+          Continue with Business Continuity Plan for AWS ELB service
+          unavailability
+        timeAllowed: PT10M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+    - plan:
+        description: Inform users
+        timeAllowed: PT10M
+      responsible: []
+      participants: []
+      result: ''
+      activityType: Discussion
+  authors: []
