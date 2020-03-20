@@ -1,3 +1,28 @@
 id: loss-of-equipment-ups-battery
 purpose: 'Loss of equipment: UPS battery'
 activityID: security-ups-battery
+drillPlan:
+  - resourceRequirements: []
+    preparationSteps: []
+    steps:
+      - description: Login to AWS Route53 management console
+        timeAllowed: PT5M
+      - description: >-
+          Update Route53 DNS record pointing from ELB to the IP address of a
+          production server
+        timeAllowed: PT10M
+      - description: >-
+          Test if the new configuration is functioning by starting a web browser
+          on a device that is connected to internet and connecting to:
+          http://www.ribose.com
+        timeAllowed: PT10M
+      - description: Contact Amazon about DDoS by creating a support call
+        timeAllowed: PT20M
+      - description: >-
+          Continue with Business Continuity Plan for AWS ELB service
+          unavailability
+        timeAllowed: PT10M
+      - description: Inform users
+        timeAllowed: PT10M
+    revisionID: 1
+    timeCreated: 2020-03-20T01:46:27.247Z
