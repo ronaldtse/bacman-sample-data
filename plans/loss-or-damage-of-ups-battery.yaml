@@ -1,0 +1,99 @@
+id: loss-or-damage-of-ups-battery
+name: Loss or damage of UPS battery
+revisions:
+  - activationCriteria:
+      require: all
+      criteria:
+        - UPS battery is no longer functional
+    requiredResources:
+      - type: information
+        description: Access to battery supplier
+    timeCreated: 2020-04-02T15:51:27.512Z
+    roles:
+      - role: IT service manager
+        responsibility: Authority
+      - role: Operations team
+        responsibility: Implementation
+    procedures:
+      - name: Migrate to AC power
+        type: implementation
+        steps:
+          - action: >-
+              Migrate CCTV devices and network equipment affected by failed UPS
+              battery to AC power supply
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources:
+          - type: people
+            description: Operations team member
+        roles: []
+      - name: Order replacement battery
+        type: implementation
+        steps:
+          - action: Contact battery supplier to obtain replacement battery
+          - action: Receive replacement battery
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources:
+          - type: people
+            description: 1 operations team member
+          - type: information
+            description: access to UPS battery suppliers
+          - type: funds
+            description: approval from purchasing department
+      - name: Confirm UPS switch
+        type: standdown
+        steps:
+          - action: >-
+              Ensure all CCTV devices and network equipment are switched back to
+              resumed UPS power supply
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources:
+          - type: people
+            description: 1 operations team member
+      - name: Install replacement battery
+        type: implementation
+        steps: []
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources:
+          - type: people
+            description: 1 operations team member
+          - type: information
+            description: access to UPS battery suppliers
+      - name: Assign operations member
+        type: activation
+        steps:
+          - action: Arrange 1 operations team member to execute recovery plan
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources:
+          - type: people
+            description: IT service manager
+          - type: people
+            description: IS manager
+        roles:
+          - role: Management representative
+            responsibility: ''
+      - name: Alert all operations team members
+        type: communication
+        steps: []
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources: []
+      - name: Escalate to IT service manager
+        type: communication
+        steps: []
+        activationCriteria:
+          require: all
+          criteria: []
+        requiredResources: []
+    scope: ''
+purpose: Recovery of UPS functionality on UPS battery failure.
